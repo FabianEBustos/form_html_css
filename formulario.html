@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Formulario de consulta</h1>
+  <h3>(*) Datos Necesarios</h3>
+  <div class="formulario">
+      <form action="resultados.html" method="post">
+        <label for="ipaciente">Paciente(*):</label>
+        <input type="text" id="ipaciente" name="paciente" required placeholder="Nombre..." autocomplete="off" autofocus>
+        <br>
+        <label for="ipropietario">Propietario(*):</label>
+        <input type="text" id="ipropietario" name="propietario" required placeholder="Dueño..." autocomplete="off">
+        <br>
+        <label for="iespecie">Especie(*):</label>
+        <input id="iespecie" name="especie" list="lista" required>
+        <datalist id="lista">
+          <option value="Perro">
+          <option value="Gato">
+          <option value="Conejo">
+        </datalist>
+        <br>
+        <label for="iraza">Raza:</label>
+        <input type="text" id="iraza" name="raza" />
+        <br>
+        <label for="iedad">Edad(*):</label>
+        <input type="number" id="iedad" name="edad" min="0" required />
+        <br><br>
+        <b>Sexo</b>
+        <br>
+        <div class="container">
+          <div class="radio">
+            <input type="radio" id="isexom" name="sexo" value="M">
+            <label for="isexom"><span>Macho</span></label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="isexoh" name="sexo" value="H">
+            <label for="isexoh">Hembra</label>
+          </div>
+        </div>
+        <br><br>
+        <b>Vacunas</b>
+        <br>
+        <div class="container">
+          <div class="check">
+            <input type="checkbox" id="vantirabica" name="antirabica">    
+            <label for="vantirabica">Antirabica</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="vmoquillo" name="moquillo">
+            <label for="vmoquillo">Moquillo</label>
+          </div>
+        </div>
+        <br><br>
+        <label for="fconsulta">Fecha consulta:</label>
+        <input type="date" id="fconsulta" name="consulta">
+        <br>
+        <label for="hconsulta">Hora consulta:</label>
+        <input type="time" id="hconsulta" name="hora">
+        <br><br>
+        <label for="isintomas"><b>Sintomas:</b></label>
+        <br>
+        <textarea id="isintomas" name="sintomas" rows="5" cols="50" placeholder="Motivo de consulta..."></textarea>
+        <br>
+        <button type="reset">Limpiar</button>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+</body>
+</html>
