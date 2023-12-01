@@ -69,7 +69,7 @@ form input[type="radio"] + label {
 
 
 .radio input[type="radio"] {
-	display: none;
+	/* display: none; */
 }
 
 .radio input[type="radio"] + label {
