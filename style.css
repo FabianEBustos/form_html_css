@@ -65,9 +65,10 @@ form input[type="radio"] + label {
 	width: 40%;
 }
 
-.radio input[type="radio"] {
-	/* display: none; */
-}
+/* .radio input[type="radio"] {
+    
+	display: none;
+} */
 
 .radio input[type="radio"] + label {
 	/* font-weight: bold; */
