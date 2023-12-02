@@ -15,13 +15,13 @@ form {
     background-color:rgba(61, 75, 77, 0.178);
     border:1px solid #ccc;
     border-radius:10px;
-    padding-left: 15px;    
+    /* padding-left: 15px;     */
     width: 50%;
 }
 
 form label {
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px 15px;
     width: 18%;
 }
 
@@ -56,17 +56,15 @@ form input[type="radio"] + label {
 
 .container {
 	display: flex;
-	/* justify-content: space-evenly; <--- para moviles */
-	justify-content: center;
+	justify-content: space-evenly;
+	/* justify-content: center; */
 }
 
 .container .radio {
-	margin-left: 30px;
+	/* margin-left: 30px; */
 	/* width: 105px; */
 	width: 30%;
 }
-
-
 
 .radio input[type="radio"] {
 	/* display: none; */
@@ -75,11 +73,14 @@ form input[type="radio"] + label {
 .radio input[type="radio"] + label {
 	font-weight: bold;
 	line-height: 19px;
-	color: #ccc;
+	/* color: #ccc; */
 	cursor: pointer;
+    padding: 0;
 }
+
 .radio input[type="radio"]:checked + label {
-	color: blue;
+	/* color: blue; */
+    color: black;
 }
 
 
