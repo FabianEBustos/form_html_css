@@ -41,7 +41,8 @@ form .container .radio label {
 }
 
 form .container .radio input {    
-    /* width: 72%; */
+    display: inline;
+    width: 25%;
 }
 
 /* form input[type="radio"] {
@@ -56,14 +57,12 @@ form input[type="radio"] + label {
 
 .container {
 	display: flex;
-	justify-content: space-evenly;
-	/* justify-content: center; */
+	/* justify-content: space-evenly; */
+	justify-content: center;
 }
 
 .container .radio {
-	/* margin-left: 30px; */
-	/* width: 105px; */
-	width: 30%;
+	width: 40%;
 }
 
 .radio input[type="radio"] {
@@ -71,7 +70,7 @@ form input[type="radio"] + label {
 }
 
 .radio input[type="radio"] + label {
-	font-weight: bold;
+	/* font-weight: bold; */
 	line-height: 19px;
 	/* color: #ccc; */
 	cursor: pointer;
@@ -80,23 +79,29 @@ form input[type="radio"] + label {
 
 .radio input[type="radio"]:checked + label {
 	/* color: blue; */
+    font-weight: bold;
     color: black;
 }
 
-
+.container .check {
+    width: 40%;
+}
 
 .check input[type="checkbox"] {
-	/* display: none; */
+	display: inline;
+    width: 25%;
 }
 
 .check input[type="checkbox"] + label {
-	font-weight: bold;
+	/* font-weight: bold; */
 	line-height: 3em;
-	color: #ccc;
+	/* color: #ccc; */
 	cursor: pointer;
+    padding: 0;
 }
 .check input[type="checkbox"]:checked + label {
-	color: #0fbf12;
+    font-weight: bold;
+	color: black;
 }
 
 
