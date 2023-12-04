@@ -10,14 +10,20 @@
 <body>
   <h1>Formulario de consulta</h1>
   <h3>(*) Datos Necesarios</h3>
-  <div class="formulario">
-      <form action="resultados.html" method="post">
+
+  <div class="container">
+    <form class="form" action="resultados.html" method="post">
+      <div class="form__datos">
         <label for="ipaciente">Paciente(*):</label>
         <input type="text" id="ipaciente" name="paciente" required placeholder="Nombre..." autocomplete="off" autofocus>
-        <br>
+      </div>
+      <br>
+      <div class="form__datos">
         <label for="ipropietario">Propietario(*):</label>
         <input type="text" id="ipropietario" name="propietario" required placeholder="Dueño..." autocomplete="off">
-        <br>
+      </div>
+      <br>
+      <div class="form__datos">
         <label for="iespecie">Especie(*):</label>
         <input id="iespecie" name="especie" list="lista" required>
         <datalist id="lista">
@@ -25,29 +31,38 @@
           <option value="Gato">
           <option value="Conejo">
         </datalist>
-        <br>
+      </div>
+      <br>
+      <div class="form__datos">
         <label for="iraza">Raza:</label>
         <input type="text" id="iraza" name="raza" />
-        <br>
+      </div>
+      <br>
+      <div class="form__datos">
         <label for="iedad">Edad(*):</label>
         <input type="number" id="iedad" name="edad" min="0" required />
-        <br><br>
-        <label>Sexo</label>
-        <br>
-        <div class="container">
-          <div class="radio">
-            <input type="radio" id="isexom" name="sexo" value="M">
-            <label for="isexom"><span>Macho</span></label>
-          </div>
-          <div class="radio">
-            <input type="radio" id="isexoh" name="sexo" value="H">
-            <label for="isexoh">Hembra</label>
-          </div>
+      </div>
+
+      <br><br>
+
+      <label>Sexo</label>
+      <br>
+      <div>
+        <div class="radio">
+          <input type="radio" id="isexom" name="sexo" value="M">
+          <label for="isexom"><span>Macho</span></label>
         </div>
+        <div class="radio">
+          <input type="radio" id="isexoh" name="sexo" value="H">
+          <label for="isexoh">Hembra</label>
+        </div>
+      </div>
+
         <br><br>
+
         <label>Vacunas</label>
         <br>
-        <div class="container">
+        <div>
           <div class="check">
             <input type="checkbox" id="vantirabica" name="antirabica">    
             <label for="vantirabica">Rabia</label>
@@ -57,23 +72,31 @@
             <label for="vmoquillo">Moquillo</label>
           </div>
         </div>
+
         <br><br>
+
+      <div class="form__datos">
         <label for="fconsulta">Fecha consulta:</label>
         <input type="date" id="fconsulta" name="consulta">
+      </div>
         <br>
+      <div class="form__datos">
         <label for="hconsulta">Hora consulta:</label>
         <input type="time" id="hconsulta" name="hora">
+      </div>
         <br><br>
+      <div class="form__datos">
         <label for="isintomas"><b>Sintomas:</b></label>
         <br>
         <textarea id="isintomas" name="sintomas" rows="5" cols="50" placeholder="Motivo de consulta..."></textarea>
+      </div>
         <br>
         <div class="buttons">
           <button type="reset">Limpiar</button>
           <br>
           <button type="submit">Enviar</button>
         </div>
-      </form>
-    </div>
+    </form>
+  </div>
 </body>
 </html>
