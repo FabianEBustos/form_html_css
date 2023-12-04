@@ -1,5 +1,8 @@
-body {
+body {    
     background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -15,7 +18,6 @@ form {
     background-color:rgba(61, 75, 77, 0.178);
     border:1px solid #ccc;
     border-radius:10px;
-    /* padding-left: 15px;     */
     width: 50%;
 }
 
@@ -32,6 +34,7 @@ form textarea {
 
 form input {    
     width: 72%;
+    text-align: center;
 }
 
 form .container .radio label {
@@ -136,7 +139,12 @@ form input[type="checkbox"]:checked + label {
     color:blue;
 } */
 
-form button {
-    margin:10px 0;
+form .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+form .buttons button {
+    margin:15px;
     width: 60px;
 }
