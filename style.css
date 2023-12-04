@@ -48,10 +48,26 @@ h1 {
     text-align: center;
 }
 
+.radio__container, .check__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.radio__container label{
+    display: inline-block;
+    padding: 10px 15px;
+    width: 18%;
+}
+
+.check__container label {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 18%;
+}
+
 .form .radio label {
     display: inline-block;
-    /* padding: 10px 0;
-    width: 18%; */
 }
 
 .form .radio input {    
@@ -93,6 +109,7 @@ h1 {
 	cursor: pointer;
     padding: 0;
 }
+
 .check input[type="checkbox"]:checked + label {
     font-weight: bold;
 	color: black;
@@ -100,7 +117,6 @@ h1 {
 
 form input[type="checkbox"] {
     display: none;
-    margin-left: 75px;
     width:15%;
 }
 
@@ -111,16 +127,17 @@ form input[type="checkbox"] + label {
 
 form input[type="checkbox"]:checked + label {
     color:blue;
-} */
+}
 
 .form .buttons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .form .buttons button {
-    margin:15px;
-    width: 60px;
+    margin:auto;
+    width: 80%;
 }
 
 /* R E S P O N S I V E */
@@ -139,5 +156,16 @@ form input[type="checkbox"]:checked + label {
     .form__datos textarea{
         width: 70%;
         text-align: center;
+    }
+
+    /* .radio__container > input{
+        text-align: center;
+    } */
+
+    .form .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
     }
 }

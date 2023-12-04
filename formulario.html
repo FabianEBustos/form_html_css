@@ -45,9 +45,10 @@
 
       <br><br>
 
-      <label>Sexo</label>
+      <!-- <label>Sexo</label> -->
       <br>
-      <div>
+      <div class="radio__container">
+        <label>Sexo</label>
         <div class="radio">
           <input type="radio" id="isexom" name="sexo" value="M">
           <label for="isexom"><span>Macho</span></label>
@@ -60,9 +61,10 @@
 
         <br><br>
 
-        <label>Vacunas</label>
+        <!-- <label>Vacunas</label> -->
         <br>
-        <div>
+        <div class="check__container">
+          <label>Vacunas</label>
           <div class="check">
             <input type="checkbox" id="vantirabica" name="antirabica">    
             <label for="vantirabica">Rabia</label>
@@ -90,12 +92,12 @@
         <br>
         <textarea id="isintomas" name="sintomas" rows="5" cols="50" placeholder="Motivo de consulta..."></textarea>
       </div>
+      <br>
+      <div class="buttons">
+        <button type="reset">Limpiar</button>
         <br>
-        <div class="buttons">
-          <button type="reset">Limpiar</button>
-          <br>
-          <button type="submit">Enviar</button>
-        </div>
+        <button type="submit">Enviar</button>
+      </div>
     </form>
   </div>
 </body>
