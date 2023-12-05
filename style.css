@@ -43,7 +43,6 @@ h3 {
 }
 
 .form__datos textarea {
-    /* margin-left:18%; */
     width: 90%;
 }
 
@@ -54,7 +53,10 @@ h3 {
 }
 
 .form__datos input:focus {
+    background: none;
+    border: none;
     border-bottom: 1px solid;
+    outline: none;
 }
 
 .radio__container, .check__container {
@@ -89,15 +91,12 @@ h3 {
 }
 
 .radio input[type="radio"] + label {
-	/* font-weight: bold; */
 	line-height: 19px;
-	/* color: #ccc; */
 	cursor: pointer;
     padding: 0;
 }
 
 .radio input[type="radio"]:checked + label {
-	/* color: blue; */
     font-weight: bold;
     color: black;
 }
@@ -112,9 +111,7 @@ h3 {
 }
 
 .check input[type="checkbox"] + label {
-	/* font-weight: bold; */
 	line-height: 3em;
-	/* color: #ccc; */
 	cursor: pointer;
     padding: 0;
 }
@@ -168,15 +165,15 @@ form input[type="checkbox"]:checked + label {
         text-align: center;
     }
 
-    /* .radio__container > input{
-        text-align: center;
-    } */
-
     .form .buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 10px;
+    }
+
+    .form .buttons button {
+        width: 40%;
     }
 }
 
