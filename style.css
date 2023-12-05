@@ -65,73 +65,68 @@ h3 {
     flex-direction: row;
 }
 
-.radio__container label{
+.radio__container label, .check__container label{
     display: inline-block;
     padding: 10px 15px;
     width: 18%;
 }
 
-.check__container label {
-    display: inline-block;
-    padding: 10px 15px;
-    width: 18%;
-}
 
-.form .radio label {
+.radio__container .radio label {
     display: inline-block;
 }
 
-.form .radio input {    
+.radio__container .radio input {    
     display: inline;
     width: 25%;
 }
 
-.radio {
+.radio__container .radio {
 	width: 40%;
 }
 
-.radio input[type="radio"] + label {
+.radio__container.radio input[type="radio"] + label {
 	line-height: 19px;
 	cursor: pointer;
     padding: 0;
 }
 
-.radio input[type="radio"]:checked + label {
+.radio__container .radio input[type="radio"]:checked + label {
     font-weight: bold;
     color: black;
 }
 
-.check {
+.check__container .check {
     width: 40%;
 }
 
-.check input[type="checkbox"] {
+.check__container .check input[type="checkbox"] {
 	display: inline;
     width: 25%;
 }
 
-.check input[type="checkbox"] + label {
+.check__container .check input[type="checkbox"] + label {
 	line-height: 3em;
 	cursor: pointer;
     padding: 0;
 }
 
-.check input[type="checkbox"]:checked + label {
+.check__container .check input[type="checkbox"]:checked + label {
     font-weight: bold;
 	color: black;
 }
 
-form input[type="checkbox"] {
+.check__container input[type="checkbox"] {
     display: none;
     width:15%;
 }
 
-form input[type="checkbox"] + label {
+.check__container input[type="checkbox"] + label {
     width: 10%;
     color:red;
 }
 
-form input[type="checkbox"]:checked + label {
+.check__container input[type="checkbox"]:checked + label {
     color:blue;
 }
 
