@@ -68,11 +68,52 @@ h3 {
 .radio__container label, .check__container label{
     display: inline-block;
     padding: 10px 15px;
-    width: 18%;
+    width: 25%;
+}
+
+.radio__container input[type="radio"] + label:before {
+	content: "";
+	width: 26px;
+	height: 26px;	
+	float: left;
+	/* margin: 0.5em 0.5em 0 0; */
+	border: 2px solid #ccc;
+	border-radius: 100%;
+	background: #fff;
+}
+
+.radio__container input[type="radio"]:checked + label:before {
+	border-color: #0fbf12;
+}
+
+.radio__container input[type="radio"]:checked + label:after {
+    position: absolute;
+	content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid #0fbf12;
+    float: left;
+    margin-left: 7px;
+    margin-top: -41px;
+    border-radius: 100%;
+}
+
+.radio__container input[type="radio"] {
+	display: none;
+}
+
+.radio__container input[type="radio"] + label {
+	font-weight: bold;
+	/* line-height: 3em; */
+	color: #ccc;
+	cursor: pointer;
+}
+.radio__container input[type="radio"]:checked + label {
+	color: #0fbf12;
 }
 
 
-.radio__container .radio label {
+/* .radio__container .radio label {
     display: inline-block;
 }
 
@@ -94,9 +135,50 @@ h3 {
 .radio__container .radio input[type="radio"]:checked + label {
     font-weight: bold;
     color: black;
+} */
+
+.check__container input[type="checkbox"] + label:before {    
+	content: "";
+	width: 26px;
+	height: 26px;
+	float: left;
+	margin: 0.5em 0.5em 0 0;
+	border: 2px solid #ccc;
+	background: #fff;
+}
+.check__container input[type="checkbox"]:checked + label:before {
+	border-color: #0fbf12;
 }
 
-.check__container .check {
+.check__container input[type="checkbox"]:checked + label:after {
+    position: absolute;
+	content: "";
+	width: 12px;
+	height: 6px;
+	border: 4px solid #0fbf12;
+	float: left;
+	margin-left: 6px;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -69px;
+	transform: rotate(-55deg);
+}
+
+.check__container input[type="checkbox"] {
+	display: none;
+}
+
+.check__container input[type="checkbox"] + label {
+	font-weight: bold;
+	line-height: 3em;
+	color: #ccc;
+	cursor: pointer;
+}
+.check__container input[type="checkbox"]:checked + label {
+	color: #0fbf12;
+}
+
+/* .check__container .check {
     width: 40%;
 }
 
@@ -128,7 +210,7 @@ h3 {
 
 .check__container input[type="checkbox"]:checked + label {
     color:blue;
-}
+} */
 
 .form .buttons {
     display: flex;
