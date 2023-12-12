@@ -21,9 +21,12 @@ h3 {
 }
 
 .form {
+    background-image: url(img/pets01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    background-color:rgba(61, 75, 77, 0.178);
+    /* background-color:rgba(61, 75, 77, 0.178); */
     border:1px solid #ccc;
     border-radius:10px;
     width: 80%;
