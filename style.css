@@ -113,30 +113,6 @@ h3 {
 }
 
 
-/* .radio__container .radio label {
-    display: inline-block;
-}
-
-.radio__container .radio input {    
-    display: inline;
-    width: 25%;
-}
-
-.radio__container .radio {
-	width: 40%;
-}
-
-.radio__container.radio input[type="radio"] + label {
-	line-height: 19px;
-	cursor: pointer;
-    padding: 0;
-}
-
-.radio__container .radio input[type="radio"]:checked + label {
-    font-weight: bold;
-    color: black;
-} */
-
 .check__container input[type="checkbox"] + label:before {    
 	content: "";
 	width: 26px;
@@ -178,39 +154,6 @@ h3 {
 	color: #0fbf12;
 }
 
-/* .check__container .check {
-    width: 40%;
-}
-
-.check__container .check input[type="checkbox"] {
-	display: inline;
-    width: 25%;
-}
-
-.check__container .check input[type="checkbox"] + label {
-	line-height: 3em;
-	cursor: pointer;
-    padding: 0;
-}
-
-.check__container .check input[type="checkbox"]:checked + label {
-    font-weight: bold;
-	color: black;
-}
-
-.check__container input[type="checkbox"] {
-    display: none;
-    width:15%;
-}
-
-.check__container input[type="checkbox"] + label {
-    width: 10%;
-    color:red;
-}
-
-.check__container input[type="checkbox"]:checked + label {
-    color:blue;
-} */
 
 .form .buttons {
     display: flex;
