@@ -25,9 +25,6 @@ h3 {
 }
 
 .form {
-    /* background-image: url(img/pets01.png);
-    background-position: center center;
-    background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
     background-color:rgba(255, 255, 255, 0.35);
@@ -83,7 +80,6 @@ h3 {
 	width: 26px;
 	height: 26px;	
 	float: left;
-	/* margin: 0.5em 0.5em 0 0; */
 	border: 2px solid #ccc;
 	border-radius: 100%;
 	background: #fff;
@@ -111,7 +107,6 @@ h3 {
 
 .radio__container input[type="radio"] + label {
 	font-weight: bold;
-	/* line-height: 3em; */
 	color: #ccc;
 	cursor: pointer;
 }
