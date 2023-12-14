@@ -15,18 +15,22 @@ h3 {
 }
 
 .container {
+    background-image: url(img/pets01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .form {
-    background-image: url(img/pets01.png);
+    /* background-image: url(img/pets01.png);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
-    /* background-color:rgba(61, 75, 77, 0.178); */
+    background-color:rgba(255, 255, 255, 0.35);
     border:1px solid #ccc;
     border-radius:10px;
     width: 80%;
